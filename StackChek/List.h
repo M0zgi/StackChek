@@ -236,7 +236,7 @@ ostream& operator<<(ostream& out, const List<T>& obj)
 	}
 
 	out << endl;
-	out << setw(count + 45) << "\x1b[32;1m^\x1b[0m";
+	//out << setw(count + 45) << "\x1b[32;1m^\x1b[0m";
 	return out;
 }
 
