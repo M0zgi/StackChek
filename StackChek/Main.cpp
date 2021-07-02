@@ -17,7 +17,7 @@ int main()
 
 	string str;
 
-	cout << "Введите строку: ";
+	cout << "Введите строку (\x1b[31;1mВАЖНО! Строка должна заканчиваться символом ';')\x1b[0m: ";
 	getline(cin, str, ';');
 
 	DynamicStack<char, 100> dst;
