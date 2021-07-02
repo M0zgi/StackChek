@@ -18,7 +18,7 @@ int main()
 	string str;
 
 	cout << "Введите строку: ";
-	getline(cin, str);
+	getline(cin, str, ';');
 
 	DynamicStack<char, 100> dst;
 
@@ -84,10 +84,15 @@ int main()
 		}
 
 		if (!count)
-			cout << "Введенная строка не содержит скобок";
+		{
+			
+			cout << "Введенная строка не содержит скобок "; 
+			
+		}
+			
 
 		else if (dst.isEmpty())
-			cout << "Введенная строка не содержит ошибок";
+			cout << "Введенная строка не содержит ошибок: " << str;
 
 		else if (str.length() == countchar)
 		{
